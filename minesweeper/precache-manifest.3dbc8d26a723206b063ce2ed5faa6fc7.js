@@ -1,22 +1,22 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bc50fce3e8321f8689046d4c2c0b212e",
-    "url": "/demos/minesweeper/assets/apple-touch-icon.png"
+    "url": "/demos/minesweeper/assets/icons/apple-touch-icon.png"
   },
   {
     "revision": "bc50fce3e8321f8689046d4c2c0b212e",
     "url": "/demos/minesweeper/assets/icons/mine.png"
   },
   {
-    "revision": "f2662018e9c85c40a449",
-    "url": "/demos/minesweeper/bundle.f2662.js"
+    "revision": "ce7b9d1e3fd460a03874",
+    "url": "/demos/minesweeper/bundle.ce7b9.js"
   },
   {
-    "revision": "f2662018e9c85c40a449",
+    "revision": "ce7b9d1e3fd460a03874",
     "url": "/demos/minesweeper/bundle.fc333.css"
   },
   {
-    "revision": "90014cbbec2b00221e5919b11dfff8f7",
+    "revision": "a305425cbed2ba920c186586a627688a",
     "url": "/demos/minesweeper/index.html"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demos/minesweeper/sw-debug.js"
   },
   {
-    "revision": "62884de9dfb0aa1e87c71100943e0bcd",
+    "revision": "4a97805964ed2d290ae503fd23e79062",
     "url": "/demos/minesweeper/sw-esm.js"
   },
   {

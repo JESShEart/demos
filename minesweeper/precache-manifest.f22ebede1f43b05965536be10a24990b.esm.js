@@ -1,22 +1,22 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bc50fce3e8321f8689046d4c2c0b212e",
-    "url": "/demos/minesweeper/assets/apple-touch-icon.png"
+    "url": "/demos/minesweeper/assets/icons/apple-touch-icon.png"
   },
   {
     "revision": "bc50fce3e8321f8689046d4c2c0b212e",
     "url": "/demos/minesweeper/assets/icons/mine.png"
   },
   {
-    "revision": "f2662018e9c85c40a449",
-    "url": "/demos/minesweeper/bundle.218de.esm.js"
+    "revision": "ce7b9d1e3fd460a03874",
+    "url": "/demos/minesweeper/bundle.3f62b.esm.js"
   },
   {
-    "revision": "f2662018e9c85c40a449",
+    "revision": "ce7b9d1e3fd460a03874",
     "url": "/demos/minesweeper/bundle.fc333.css"
   },
   {
-    "revision": "90014cbbec2b00221e5919b11dfff8f7",
+    "revision": "a305425cbed2ba920c186586a627688a",
     "url": "/demos/minesweeper/index.html"
   },
   {
