@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demos/minesweeper/assets/icons/mine.png"
   },
   {
-    "revision": "c4332c237a71547192b1",
-    "url": "/demos/minesweeper/bundle.c4332.js"
+    "revision": "dcdfbe6f1cd671cf2955",
+    "url": "/demos/minesweeper/bundle.3574e.css"
   },
   {
-    "revision": "c4332c237a71547192b1",
-    "url": "/demos/minesweeper/bundle.fc333.css"
+    "revision": "dcdfbe6f1cd671cf2955",
+    "url": "/demos/minesweeper/bundle.dcdfb.js"
   },
   {
-    "revision": "cc1f3a00350e7a386e8706c1dc860c92",
+    "revision": "f1b103d4367b26b086291bbbd1761eef",
     "url": "/demos/minesweeper/index.html"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demos/minesweeper/sw-debug.js"
   },
   {
-    "revision": "98a9decf4c390928bff6820ead71535f",
+    "revision": "df5271d98b8d68d56b3fbfb1a53954a2",
     "url": "/demos/minesweeper/sw-esm.js"
   },
   {
