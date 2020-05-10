@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demos/minesweeper/assets/icons/mine.png"
   },
   {
-    "revision": "dcdfbe6f1cd671cf2955",
+    "revision": "c452196e5926358f1440",
     "url": "/demos/minesweeper/bundle.3574e.css"
   },
   {
-    "revision": "dcdfbe6f1cd671cf2955",
-    "url": "/demos/minesweeper/bundle.9a6c8.esm.js"
+    "revision": "c452196e5926358f1440",
+    "url": "/demos/minesweeper/bundle.a7048.esm.js"
   },
   {
-    "revision": "f1b103d4367b26b086291bbbd1761eef",
+    "revision": "ae264f505447e6e098e5fde0bf09d6dd",
     "url": "/demos/minesweeper/index.html"
   },
   {
