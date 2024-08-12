@@ -82,13 +82,11 @@ function tempoChange(it) {
 
 var beats = document.getElementsByClassName('beat');
 function run() {
-  var nowMilis = new Date().getMilliseconds();
-  var nowSecs = new Date().getSeconds() * 1000;
-  var now = nowMilis + nowSecs;
+  var nowDate = new Date();
+  var now = nowDate.getSeconds() * 1000 + nowDate.getMilliseconds();
   var nextBeat = Math.floor(now / increment) % 4;
 
   if (nextBeat !== beat) {
-    // console.log({nextBeat, beat});
     beats[beat].classList.remove('active');
     beats[nextBeat].classList.add('active');
     beat = nextBeat;
