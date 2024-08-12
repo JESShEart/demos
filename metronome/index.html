@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  #metronome {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border: 10px solid black;
+  }
+  #metronome .beat {
+    display: flex;
+    flex: 1;
+    min-height: 25vw;
+    border-radius: 100px;
+  }
+  #metronome .beat .value {
+    display: flex;
+    margin: auto;
+    font-size: 10vw;
+  }
+  #metronome .beat.active {
+    background: white;
+    color: black;
+  }
+  #tempo {
+    display: flex;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<div id="metronome">
+  <div class="beat">
+    <div class="value">1</div>
+  </div>
+  <div class="beat">
+    <div class="value">2</div>
+  </div>
+  <div class="beat">
+    <div class="value">3</div>
+  </div>
+  <div class="beat">
+    <div class="value">4</div>
+  </div>
+</div>
+<div style="display: flex; flex-direction: column;">
+  <button onclick="openFullscreen();" style="display: flex; margin: 0.25rem auto;">Open in Fullscreen Mode</button>
+  <div style="display: flex; margin: 0.25rem auto;">
+    <span id="bpm">100</span>&nbsp;<span>BPM</span>
+  </div>
+  <input id="tempo" type="range" min="25" max="175" value="100" onchange="tempoChange(this.value)"/>
+</div>
+
+<script>
+var elem = document.getElementById("metronome");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+var tempo = 100;
+var increment = 600;
+var beat = 0;
+var bpm = document.getElementById("bpm");
+function tempoChange(it) {
+  tempo = it;
+  bpm.innerText = it;
+  increment = 60000 / tempo;
+  new Date().getMilliseconds()
+}
+
+var beats = document.getElementsByClassName('beat');
+function run() {
+  var nowMilis = new Date().getMilliseconds();
+  var nowSecs = new Date().getSeconds() * 1000;
+  var now = nowMilis + nowSecs;
+  var nextBeat = Math.floor(now / increment) % 4;
+
+  if (nextBeat !== beat) {
+    // console.log({nextBeat, beat});
+    beats[beat].classList.remove('active');
+    beats[nextBeat].classList.add('active');
+    beat = nextBeat;
+  }
+
+  window.setTimeout(run, 5);
+}
+run();
+
+</script>
+
+</body>
+</html>
